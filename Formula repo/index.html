@@ -1,58 +1,82 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Formula Manipal </title>
-    </head>
-        <body>
-<h1>Formula Manipal </h1>
-<a href="http://www.formulamanipal.in" target="_blank"> <img src="FM Logo - Transparent.png" height="100"> </a>
+<html lang="en">
 
- <h3>Welcome to formula manipal</h3>
- <table>
-    
-    <tr> Home </tr>
-    <tr>  About Us    </tr>
-    <tr>   Contact information   </tr>
- </table>
- <h4>Shoutout to our sponsors!!</h4>       
- <a href="https://www.manipal.edu/mu.html" target="_blank"><img src="mahe logo.png" alt=""></a>
+<head>
+    <meta charset="UTF-8">
+    <title>Formula Manipal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Formula Manipal</h1>
+        <a href="http://www.formulamanipal.in" target="_blank">
+            <img src="FM Logo - Transparent.png" alt="Formula Manipal Logo" class="logo" height="100">
+        </a>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <h3>Welcome to Formula Manipal</h3>
+
+        <h4>Shoutout to our sponsors!!</h4>
+        <div class="sponsors">
+            <a href="https://www.manipal.edu/mu.html" target="_blank">
+                <img src="mahe logo.png" alt="MAHE Logo">
+            </a>
             <a href="https://www.formulamanipal.in/" target="_blank">Click here to view our achievements</a>
-            <a href="about.html">click here to know about us!!</a>
- <img src="https://static.wixstatic.com/media/a6b405_e355f2f0b1174ea0a564e7be1f5a8961~mv2.jpg/v1/fill/w_1600,h_641,al_c,q_85,enc_avif,quality_auto/a6b405_e355f2f0b1174ea0a564e7be1f5a8961~mv2.jpg">
-<h4>These are our achievements from the recent years: </h4>
-<ul>
-    <a href="https://www.formulabharat.com/" target="_blank">  <li>3<sup>rd</sup> in Formula Bharat </a> </li>
-    <li>1<sup>st</sup>      in the cost and manufacturing event</li>
-    <li>2<sup>nd</sup> in endurance</li>
-    <form action="">
-        <input type="text" name="name" id="">
-        <button type = "submit">Type your name here and phone number here
-               </button>
-               <input type="checkbox" name="checkbox" id="">
-               <button type = "button">Are you Arnav</button>
-               <input type="email" name = "" id = "" >
-               <button type = "submit">Enter your email here</button>
-               <p>Select your preferred domain </p>
+        </div>
 
-               <input type="radio" name = "coding" id="" value="Mechanical"> Mechanical
-               <input type="radio" name = "coding" id="" value="Management"> Management 
-               <input type="radio" name = "coding" id="" value="ECS"> ECS 
-               <input type="radio" name = "coding" id="" value = "Driverless"> Driverless
-               
-               <br>
-               <br>
-               <br>
-               <br>
-               <br>
-               <p>If you want to apply for more than one</p>
-               <input type="checkbox" name="coding" id="" value="Mechanical "> Mechanical
-               <input type="checkbox" name="coding" id="" value="Management "> Management
-               <input type="checkbox" name="coding" id="" value="ECS "> ECS
-               <input type="checkbox" name="coding" id="" value="Driverless "> Driverless
-    
-    
-    
-            </form>
-</ul>
-        </body>
+        <img class="highlight-img"
+            src="https://static.wixstatic.com/media/a6b405_e355f2f0b1174ea0a564e7be1f5a8961~mv2.jpg/v1/fill/w_1600,h_641,al_c,q_85,enc_avif,quality_auto/a6b405_e355f2f0b1174ea0a564e7be1f5a8961~mv2.jpg"
+            alt="Car Image">
+
+        <h4>These are our achievements from recent years:</h4>
+        <ul>
+            <li><a href="https://www.formulabharat.com/" target="_blank">3<sup>rd</sup> in Formula Bharat</a></li>
+            <li>1<sup>st</sup> in the Cost and Manufacturing Event</li>
+            <li>2<sup>nd</sup> in Endurance</li>
+        </ul>
+
+        <form>
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="text" name="phone" placeholder="Your Phone Number">
+    <button type="submit">Submit</button>
+
+    <label class="inline">
+        <input type="checkbox" name="isArnav"> Are you Arnav?
+    </label>
+
+    <input type="email" name="email" placeholder="Enter your email">
+    <button type="submit">Submit Email</button>
+
+    <p>Select your preferred domain</p>
+    <div class="options-group">
+        <label><input type="radio" name="domain" value="Mechanical"> Mechanical</label>
+        <label><input type="radio" name="domain" value="Management"> Management</label>
+        <label><input type="radio" name="domain" value="ECS"> ECS</label>
+        <label><input type="radio" name="domain" value="Driverless"> Driverless</label>
+    </div>
+
+    <p>If you want to apply for more than one</p>
+    <div class="options-group">
+        <label><input type="checkbox" name="multi" value="Mechanical"> Mechanical</label>
+        <label><input type="checkbox" name="multi" value="Management"> Management</label>
+        <label><input type="checkbox" name="multi" value="ECS"> ECS</label>
+        <label><input type="checkbox" name="multi" value="Driverless"> Driverless</label>
+    </div>
+</form>
+
+
+    </div>
+
+</body>
+
 </html>
