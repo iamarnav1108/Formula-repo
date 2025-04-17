@@ -3,79 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Formula Manipal</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>Formula Manipal</h1>
+<header>
+    <div class="header-container">
         <a href="http://www.formulamanipal.in" target="_blank">
-            <img src="FM Logo - Transparent.png" alt="Formula Manipal Logo" class="logo" height="100">
+            <img src="WEBSITE LOGOS (1).avif" alt="Formula Manipal Logo" class="logo">
         </a>
-    </header>
+    </div>
+</header>
 
     <nav>
         <a href="#">Home</a>
         <a href="about.html">About Us</a>
-        <a href="#">Contact</a>
+        <a href="team.html">Team</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="cars.html">Cars</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="container">
-
-        <h3>Welcome to Formula Manipal</h3>
-
-        <h4>Shoutout to our sponsors!!</h4>
-        <div class="sponsors">
-            <a href="https://www.manipal.edu/mu.html" target="_blank">
-                <img src="mahe logo.png" alt="MAHE Logo">
-            </a>
-            <a href="https://www.formulamanipal.in/" target="_blank">Click here to view our achievements</a>
-        </div>
-
+    <section class="highlight">
         <img class="highlight-img"
-            src="https://static.wixstatic.com/media/a6b405_e355f2f0b1174ea0a564e7be1f5a8961~mv2.jpg/v1/fill/w_1600,h_641,al_c,q_85,enc_avif,quality_auto/a6b405_e355f2f0b1174ea0a564e7be1f5a8961~mv2.jpg"
+            src="https://static.wixstatic.com/media/a6b405_75584d1e34434dd0893ca04b5be24674~mv2.jpg/v1/fill/w_1905,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a6b405_75584d1e34434dd0893ca04b5be24674~mv2.jpg"
             alt="Car Image">
+        <div class="highlight-text">
+            <h2>Engineered with Passion</h2>
+            <p>Witness our 17-year legacy of speed, innovation, and engineering excellence.</p>
+        </div>
+    </section>
 
-        <h4>These are our achievements from recent years:</h4>
-        <ul>
-            <li><a href="https://www.formulabharat.com/" target="_blank">3<sup>rd</sup> in Formula Bharat</a></li>
-            <li>1<sup>st</sup> in the Cost and Manufacturing Event</li>
-            <li>2<sup>nd</sup> in Endurance</li>
-        </ul>
+    <main class="container">
+        <section class="intro">
+            <h3>ABOUT US</h3>
+            <p>
+                We are a team of 45 passionate and innovative students in a student engineering project based out of
+                Manipal, Karnataka, that strives to design, conceptualise, fabricate, test, and race a single-seater
+                open-wheel Formula-style race car.
+                <br><br>
+                Since the beginning of FORMULA MANIPAL in 2007, our team has created 14 remarkably engineered vehicles
+                that have led us to win countless awards in events both in India, like Formula Bharat and competitions
+                around the world including Italy, Germany, Austria, The Czech Republic, and the United Kingdom.
+                <br><br>
+                Our motto, "Engineered with Passion", pushes us to improve our performance every year to build better,
+                more efficient, and more powerful cars. This year marks 17 years of our beautiful legacy. Stick around
+                to watch us FLY!!
+            </p>
+            <img src="https://static.wixstatic.com/media/a6b405_572bf1ee3aee4724b7728b3470e0e9b2~mv2.jpg/v1/crop/x_0,y_265,w_2784,h_1473/fill/w_635,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC_0188%5B1%5D_edited.jpg"
+                alt="Team Photo">
+        </section>
 
-        <form>
-    <input type="text" name="name" placeholder="Your Name">
-    <input type="text" name="phone" placeholder="Your Phone Number">
-    <button type="submit">Submit</button>
+        <section class="achievements">
+            <h4>Achievements</h4>
+            <ul>
+                <li>3<sup>rd</sup> in Formula Bharat</li>
+                <li>1<sup>st</sup> in the Cost and Manufacturing Event</li>
+                <li>2<sup>nd</sup> in Endurance</li>
+            </ul>
+        </section>
 
-    <label class="inline">
-        <input type="checkbox" name="isArnav"> Are you Arnav?
-    </label>
+        <section class="form-section">
+            <h4>Join Us</h4>
+            <form onsubmit="customAlert(); return false;">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="phone" placeholder="Your Phone Number" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <p>Select your preferred domain</p>
+                <div class="options-group">
+                    <label><input type="checkbox" name="multi" value="Mechanical"> Mechanical</label>
+                    <label><input type="checkbox" name="multi" value="Management"> Management</label>
+                    <label><input type="checkbox" name="multi" value="ECS"> ECS</label>
+                    <label><input type="checkbox" name="multi" value="Driverless"> Driverless</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 
-    <input type="email" name="email" placeholder="Enter your email">
-    <button type="submit">Submit Email</button>
-
-    <p>Select your preferred domain</p>
-    <div class="options-group">
-        <label><input type="radio" name="domain" value="Mechanical"> Mechanical</label>
-        <label><input type="radio" name="domain" value="Management"> Management</label>
-        <label><input type="radio" name="domain" value="ECS"> ECS</label>
-        <label><input type="radio" name="domain" value="Driverless"> Driverless</label>
-    </div>
-
-    <p>If you want to apply for more than one</p>
-    <div class="options-group">
-        <label><input type="checkbox" name="multi" value="Mechanical"> Mechanical</label>
-        <label><input type="checkbox" name="multi" value="Management"> Management</label>
-        <label><input type="checkbox" name="multi" value="ECS"> ECS</label>
-        <label><input type="checkbox" name="multi" value="Driverless"> Driverless</label>
-    </div>
-</form>
-
-
-    </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Formula Manipal. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/formulamanipal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/formula-manipal/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/user/formulamanipal" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
