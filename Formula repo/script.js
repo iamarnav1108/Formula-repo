@@ -56,3 +56,27 @@ document.addEventListener("DOMContentLoaded", () => {
         if (section.id) observer.observe(section);
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll("nav a[href^='#']");
+    navLinks.forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+});
+
+function customAlert() {
+    alert("Thanks for your interest! We'll get back to you soon.");
+}
+
+const currentPage = window.location.pathname.split("/").pop();
+document.querySelectorAll("nav a").forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+    }
+});
